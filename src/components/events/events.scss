@@ -1,0 +1,86 @@
+@import "../../utils/_mixins";
+
+.events {
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 100px 50px 17px;
+    height: 100%;
+    @include flex-column-center;
+  }
+
+  &__row {
+    width: 100%;
+    @include flex-center-space-between;
+  }
+
+  &__card {
+    width: 280px;
+    border: 20px solid var(--event-card-left);
+    border-left: 10px solid var(--event-card-left);
+    border-right: 10px solid var(--event-card-left);
+    border-bottom: 15px solid var(--event-card-left);
+    clip-path: var(--clip-path-3);
+    max-width: 300px;
+    width: 23.5%;
+    position: relative;
+    color: var(--font-color);
+
+    &:nth-child(odd) {
+      clip-path: var(--clip-path-2);
+    }
+
+    &:before {
+      content: '';
+      width: calc(100% + 20px);
+      height: calc(100% + 35px);
+      position: absolute;
+      left: -5px;
+      top: -20px;
+      background: var(--lr-pink-blue);
+      background: var(--event-card-background);
+      z-index: -1;
+    }
+  }
+}
+
+
+.card {
+  &__header {
+    min-height: 100px;
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+  }
+
+  &__row {
+    display: flex;
+    width: 100%;
+    background-color: var(--event-card-row);
+
+    &:nth-child(odd) {
+      background-color: var(--event-card-odd-row);
+    }
+  }
+
+  &__subtitle {
+    width: 40%;
+  }
+
+  &__footer {
+    min-height: 80px;
+    @include flex-center-space-between;
+    background-color: #959494;
+  }
+
+  &__block {
+    @include flex-center-space-between;
+  }
+}

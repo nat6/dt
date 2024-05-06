@@ -1,0 +1,104 @@
+@import "../../utils/_mixins";
+
+.promo {
+  //padding-top: 60px;
+  width: 100%;
+  //background-color: black;
+
+  &__wrapper {
+    width: 100%;
+    //min-height: 300px;
+    max-width: 1440px;
+    //padding: 17px 20px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__row {
+    width: 100%;
+    padding: 0 40px;
+    @include flex-center-space-between;
+  }
+
+  &__block {
+    @include flex-center;
+
+    &_left {
+      .promo__button {
+        border-right: none;
+        border-left: 3px solid var(--buttons-border-color);
+
+        //clip-path: polygon(
+        //    -5px 0%,
+        //    calc(100% + 5px) 0%,
+        //    calc(100% + 5px) 100%,
+        //    5px 100%,
+        //    -15px calc(100% - 30px)
+        //);
+
+        clip-path: polygon(
+            -5px 0%,
+            calc(100% + 5px) 0%,
+            calc(100% - 5px) 100%,
+            15px calc(100% + 30px),
+            -5px 100%
+        );
+
+
+        //polygon(-5px 0%, calc(100% + 5px) 0%, 67px 68.75%, 48px 33px, -5px 100%);
+
+        //clip-path: polygon(
+        //    -5px 0%,
+        //    calc(100% + 5px) 0%,
+        //    calc(100% + 5px) 100%,
+        //    -15px calc(100% - 30px),
+        //    -5px 100%
+        //);
+
+        //polygon(- 5 px 0 %, calc(100 % + 5 px) 0 %, 98 px 68.75 %, 77 px 103.13 %, - 5 px 100 %);
+        //}
+
+        //clip-path: polygon(
+        //    -5px 0%,
+        //    calc(100% + 5px) 0%,
+        //    91px 75.00%,
+        //    77px 103.13%,
+        //    -4px 33px
+        //);
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    border: none;
+    border-radius: 0%;
+    font-size: 0.74rem;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    margin: 0 20px 10px 0px;
+    position: relative;
+    color: var(--font-color);
+    border-right: 3px solid var(--buttons-border-color);
+    clip-path: polygon(
+        -5px 0%,
+        calc(100% + 5px) 0%,
+        calc(100% + 5px) 100%,
+        5px 100%,
+        -15px calc(100% - 30px)
+    );
+    cursor: pointer;
+    background-color: var(--buttons-background-color);
+    outline: none;
+    display: inline-block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
