@@ -1,0 +1,31 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+
+  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g id="SVGRepo_iconCarrier">
+
+    <title>ionicons-v5-j</title>
+
+    <line x1="88" y1="152" x2="424" y2="152"
+          style="fill:none;stroke:#2c2a94;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/>
+
+    <line x1="88" y1="256" x2="424" y2="256"
+          style="fill:url(#Gradient);stroke:#2c2a94;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/>
+
+    <line x1="88" y1="360" x2="424" y2="360"
+          style="fill:none;stroke:#2c2a94;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/>
+
+  </g>
+  <defs>
+    <linearGradient id="Gradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#be2969"/>
+      <stop offset="70%" stop-color="#9050fa"/>
+      <stop offset="100%" stop-color="#0073c6"/>
+    </linearGradient>
+  </defs>
+</svg>
